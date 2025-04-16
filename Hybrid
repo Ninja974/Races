@@ -199,7 +199,7 @@ end
 local Tabs = {
     ["Hybrid"] = Window:AddTab({Title = "Hybrid", Icon = ""});
     ["Human"] = Window:AddTab({Title = "Human", Icon = ""});
-    ["Slayer"] = Window:AddTab({Title = "Demon Slayer", Icon = ""});
+    ["Demon Slayer"] = Window:AddTab({Title = "Demon Slayer", Icon = ""});
     ["Demon"] = Window:AddTab({Title = "Demon", Icon = ""});
 }
 
@@ -209,21 +209,22 @@ Tabs["Hybrid"]:AddButton({
     game:GetService("ReplicatedStorage").Player_Data[game.Players.LocalPlayer.Name].Race.Value = 4
     end
 })
-Tabs["Demon"]:AddButton({
-    Title = "Get Demon";
+Tabs["Human"]:AddButton({
+    Title = "Get Human";
     Callback = function(Value)
-    game:GetService("ReplicatedStorage").Player_Data[game.Players.LocalPlayer.Name].Race.Value = 3
+    game:GetService("ReplicatedStorage").Player_Data[game.Players.LocalPlayer.Name].Race.Value = 1
     end
 })
+
 Tabs["Demon Slayer"]:AddButton({
     Title = "Get Demon Slayer";
     Callback = function(Value)
     game:GetService("ReplicatedStorage").Player_Data[game.Players.LocalPlayer.Name].Race.Value = 2
     end
 })
-Tabs["Human"]:AddButton({
-    Title = "Get Human";
+Tabs["Demon"]:AddButton({
+    Title = "Get Demon";
     Callback = function(Value)
-    game:GetService("ReplicatedStorage").Player_Data[game.Players.LocalPlayer.Name].Race.Value = 1
+    game:GetService("ReplicatedStorage").Player_Data[game.Players.LocalPlayer.Name].Race.Value = 3
     end
 })
