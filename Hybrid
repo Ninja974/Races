@@ -1,0 +1,9 @@
+local Tabs = {["Hybrid"] = Window:AddTab({Title = "Hybrid", Icon = ""});
+}
+
+Tabs["Hybrid"]:AddButton({
+    Title = "Get Hybrid";
+    Callback = function(Value)
+    game:GetService("ReplicatedStorage").Player_Data[game.Players.LocalPlayer.Name].Race.Value = 4
+    end
+})
