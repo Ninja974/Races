@@ -214,12 +214,14 @@ Tabs["Demon"]:AddButton({
     Callback = function(Value)
     game:GetService("ReplicatedStorage").Player_Data[game.Players.LocalPlayer.Name].Race.Value = 3
     end
-})Tabs["Demon Slayer"]:AddButton({
+})
+Tabs["Demon Slayer"]:AddButton({
     Title = "Get Demon Slayer";
     Callback = function(Value)
     game:GetService("ReplicatedStorage").Player_Data[game.Players.LocalPlayer.Name].Race.Value = 2
     end
-})Tabs["Human"]:AddButton({
+})
+Tabs["Human"]:AddButton({
     Title = "Get Human";
     Callback = function(Value)
     game:GetService("ReplicatedStorage").Player_Data[game.Players.LocalPlayer.Name].Race.Value = 1
